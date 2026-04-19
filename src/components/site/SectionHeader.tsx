@@ -7,7 +7,8 @@ interface Props {
 }
 
 export function SectionHeader({ index, eyebrow, title, description, align = "left" }: Props) {
-  const alignCls = align === "center" ? "items-center text-center mx-auto" : "items-start text-left";
+  const alignCls =
+    align === "center" ? "items-center text-center mx-auto" : "items-start text-left";
   return (
     <div className={`flex max-w-3xl flex-col gap-4 ${alignCls}`}>
       <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.3em] text-electric">
